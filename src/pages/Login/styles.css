@@ -1,0 +1,148 @@
+.login-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: var(--secondary-color);
+}
+
+.login-container .form-container {
+  width: 50%;
+  height: 100%;
+}
+
+.login-container .form-container .form-login-header {
+  width: 100%;
+  margin: 6vh 0 3.5vh 0;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-container .form-container .form-login-header img {
+  width: 142px;
+  height: 142px;
+  border-radius: 50%;
+}
+
+.login-container .form-container .form-login-header h2 {
+  color: var(--primary-color);
+  font-size: 18px;
+  margin-top: 19px;
+}
+
+.login-container img {
+  width: 100%;
+  height: auto;
+}
+
+.login-container .form-container .login-form {
+  margin-top: auto 0;
+  padding: 0 60px;
+}
+
+.login-container .form-container .login-form h2 {
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--title-color);
+}
+
+.login-container .form-container .login-form .form-input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.login-container .form-container .login-form .form-input label {
+  color: var(--title-color);
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-family: Montserrat;
+}
+
+.login-container .form-container .login-form .form-input input {
+  padding: 0 15px;
+  width: 100%;
+  height: 40px;
+  color: var(--title-color);
+  
+  outline: none;
+  border: 1px solid #949494;
+  border-radius: 7px;
+}
+
+.login-container .form-container .login-form .form-input input:focus {
+  border: 2px solid var(--alternative-secondary-color);
+}
+
+.login-container .form-container .login-form button {
+  width: 100%;
+  height: 40px;
+  margin-top: 55px;
+  
+  border-radius: 12px;
+  border: 2px solid var(--alternative-secondary-color);
+  outline: none;
+  cursor: pointer;
+
+  background-color: var(--alternative-secondary-color);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.8s;
+}
+
+.login-container .form-container .login-form button:hover {
+  background-color: var(--secondary-color);
+  color: var(--alternative-secondary-color);
+}
+
+.login-container .form-container .login-form  .forgot-password {
+  background: transparent;
+  color: var(--alternative-secondary-color);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  margin-top: 10px;
+}
+
+.login-container .form-container .login-form  .forgot-password:hover {
+  background: transparent;
+  text-decoration: underline;
+}
+
+.login-container .login-image-container {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.login-container .login-image-container img {
+  height: 100%;
+  width: auto;
+  position: relative;
+}
+
+@media (max-width: 1034px) {
+  .login-container .form-container .login-form {
+    margin-top: auto 0;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 710px) {
+  .login-container .form-container {
+    width: 100%;
+  }
+  
+  .login-container .form-container .login-form {
+    margin-top: auto 0;
+    padding: 0 40px;
+  }
+
+  .login-container .login-image-container {
+    display: none;
+  }
+}

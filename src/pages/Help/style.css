@@ -1,0 +1,11 @@
+.form-content .line span textarea {
+  height: 200px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+  font-size: 14px;
+  padding: 12.5px;
+  font-weight: 400;
+  color: #6a6c6e;
+  outline: none;
+  max-width: 1000px;
+}

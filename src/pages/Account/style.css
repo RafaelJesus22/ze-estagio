@@ -1,0 +1,130 @@
+.form-wrapper {
+  flex: 1;
+  padding: 30px;
+}
+
+.form-content {
+  padding: 35px 50px ;
+  background: #fff;
+  border: 1px solid #d3d3d3;
+  max-width: 100%;
+}
+
+.form-content form {
+  flex: 1;
+}
+
+.form-content h1 {
+  color: #453995;
+  margin: 0 0 20px;
+  font-size: 24px;
+}
+
+.form-content p {
+  font-size: 13px;
+  color: #6a6c6e;
+  margin-bottom: 20px;
+}
+
+.form-content .line {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+}
+.form-content .line + .line {
+  margin-top: 20px;
+}
+
+.form-content .line span {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 100%;
+}
+
+.form-content .line span:last-child {
+  margin-right: 0;
+}
+
+.form-content .line .half {
+  max-width: 48%;
+}
+
+.form-content .line span label {
+  font-size: 15.75px;
+  color: #494949;
+}
+
+.form-content .line span input {
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid #eee;
+  font-size: 14px;
+  padding: 12.5px;
+  font-weight: 400;
+  color: #6a6c6e;
+  outline: none;
+}
+
+.form-content .line span input:focus {
+  border: 2px solid var(--alternative-secondary-color);
+}
+
+.form-content button {
+  height: 55px;
+  padding: 10px 20px;
+  margin: 30px 0 30px auto;
+  border-radius: 10px;
+  background: #ffcc00;
+  
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  transition: .2s ease-out;
+}
+
+.form-content button:hover {
+  border: 2px solid #ffcc00;
+  color: #ffcc00;
+  background: #fff;
+}
+
+.form-content button span svg {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.form-content hr {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1100px ) {
+  .form-content .line {
+    flex-direction: column;
+  }
+
+  .form-content .line span {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 767px ) {
+  main {
+    flex-direction: column;
+  }
+
+  .form-content .line .half {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+:root {
+  --primary-color: #ffcc00;
+  /* --secondary-color: #fff; */
+  --secondary-color: #f7f9fa;
+  --title-color: #494949;
+  --alternative-secondary-color: #f39000;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  font-family: Montserrat;
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  background-color: #64c0f1;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+}

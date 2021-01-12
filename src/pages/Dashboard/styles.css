@@ -1,0 +1,241 @@
+/* .dashborad-wrapper {
+  background-color: #ebebeb;
+  min-height: 100vh;
+} */
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .dashboard-content {
+  padding: 30px;
+  flex: 1;
+} 
+
+main .dashboard-content .hi-ze {
+  height: auto;
+  width: 100%;
+  padding: 35px 50px;
+  background: #fff;
+  border: 1px solid #d3d3d3;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 150px;
+  
+}
+
+main .dashboard-content .hi-ze .right img {
+  height: 195px;
+  width: 195px;
+  border-radius: 50%;
+}
+
+main .dashboard-content .hi-ze .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main .dashboard-content .hi-ze .left p {
+  font-size: 13px;
+  color: #6a6c6e;
+  line-height: 18px;
+  max-width: 850px;
+}
+
+main .dashboard-content .hi-ze .left p a {
+  text-decoration: underline;
+  color: #6a6c6e;
+  font-weight: bold;
+}
+
+main .dashboard-content .hi-ze .left p a:hover {
+  color: var(--primary-color);
+}
+
+main .dashboard-content .hi-ze .left button {
+  height: 60px;
+  max-width: 180px;
+  padding:  15px 25px;
+  border-radius: 10px;
+  margin-top: 30px;
+
+  background: #ffcc00;
+  color: #000;
+  font-size: 12px;
+  letter-spacing: 2px;
+
+
+  border: none;
+  outline: none;
+
+  transition: .3s;
+}
+
+main .dashboard-content .hi-ze .left button:hover {
+  background: #fff;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+main .dashboard-content .hi-ze .left button span {
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+
+main .dashboard-content ul {
+  margin-top: 30px;
+  list-style: none;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 50px;
+}
+
+main .dashboard-content ul li {
+  min-width: 100%;
+}
+
+main .dashboard-content ul li .top {
+  display: flex;
+  height: 50%;
+}
+
+main .dashboard-content ul li .top h1 {
+  width: 50%;
+  background-color: #ffd11a;
+  font-weight: bolder;
+  font-size: 43px;
+  text-align: center;
+  padding: 20px;
+}
+
+main .dashboard-content ul li .top span {
+  width: 50%;
+  padding: auto;
+  background: #f5c400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .dashboard-content ul li .top span svg {
+  height: 40px;
+  width: 40px;
+}
+
+main .dashboard-content ul li .bottom {
+  height: 50%;
+  background: #fff;
+  padding: 18px 0;
+  text-align: center;
+  color: #6a6c6e
+}
+
+main .dashboard-content ul li .bottom h2 {
+  font-size: 18px;
+}
+
+main .dashboard-content ul li .bottom h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media (max-width: 1400px) {
+  main .dashboard-content .hi-ze {
+    padding: 30px 50px;
+  }
+}
+
+@media (max-width: 1379px) {
+  main .dashboard-content ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1153px) {
+  main .dashboard-content .hi-ze {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  main .dashboard-content .hi-ze .left  {
+    align-items: center;
+  }
+
+  main .dashboard-content .hi-ze .left p {
+    text-align: center;
+  }
+
+  main .dashboard-content .hi-ze .left button {
+    margin-bottom: 20px;
+  }
+
+  main .dashboard-content .hi-ze .right img {
+    margin-bottom: 30px;
+  }
+
+  main .dashboard-content ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 859px) {
+  main .dashboard-content ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  main .dashboard-content .hi-ze {
+    flex-direction: row;
+  }
+
+  main .dashboard-content .hi-ze .left {
+    align-items: flex-start;
+  }
+
+  main .dashboard-content .hi-ze .left p {
+    text-align: left;
+  }
+
+  main .dashboard-content .hi-ze .left button {
+    display: none;
+  }
+
+  main .dashboard-content .hi-ze .right img {
+    height: 80px;
+    width: 80px;
+    margin-left: 20px;
+  }
+  
+  main .dashboard-content ul {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 641px) {
+  main .dashboard-content ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  main .dashboard-content ul {
+    grid-template-columns: 1fr;
+  }
+
+  main .dashboard-content .hi-ze {
+    flex-direction: column;
+  }
+
+  main .dashboard-content .hi-ze .right img {
+    height: 135px;
+    width: 135px;
+    margin-top: 40px;
+  }
+}
